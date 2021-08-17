@@ -32,7 +32,7 @@ public class SavePassword {
             int affectedRows = pstmt.executeUpdate();
             // check the affected rows 
             if (affectedRows > 0) {
-                // get the ID back
+                // get ID back
                 try (ResultSet rs = pstmt.getGeneratedKeys()) {
                     
                 } catch (SQLException ex) {
